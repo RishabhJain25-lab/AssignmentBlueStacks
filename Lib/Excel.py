@@ -53,8 +53,7 @@ def append_values(sheet_name, file_name, c1_value, c2_value, c3_value, c4_value,
             ws = wb[sheet_name]
             ws.append([c1_value, c2_value, c3_value, c4_value, c5_value])
             wb.save(file_name)
-    else:        
-         update_value_from_excel(sheet_name,file_name,c1_value, c2_value, c3_value, c4_value, c5_value)
+    
 		
 def check_file(path):
     if os.path.isfile(path):
