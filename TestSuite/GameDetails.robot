@@ -32,7 +32,7 @@ TC#1 Open Game Website
          ${GameName}  Split String   ${GameName}   Tournament   
          #Log To Console   ${Name}    
          Click Element    //*[@id="game_list"]/ul/li[${i}]/a/figcaption
-         ${gameUrlVisiblity}    Run Keyword And Return Status   Wait Until Page Contains Element    //span[@class="count-tournaments"]   
+         ${gameUrlVisiblity}    Run Keyword And Return Status   Wait Until Page Contains Element    //span[@class="count-tournaments"]    10s
          ${gameStatusCode}=  set variable if  "${gameUrlVisiblity}" == "True"
          ...    ${gameStatusCode}
          
