@@ -1,0 +1,2634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.7.4 on win32)" generated="20210131 12:25:55.166" rpa="false">
+<suite id="s1" name="GameDetails" source="C:\Users\rishabja\OneDrive - AMDOCS\Backup Folders\Desktop\GameDetails">
+<suite id="s1-s1" name="TestSuite" source="C:\Users\rishabja\OneDrive - AMDOCS\Backup Folders\Desktop\GameDetails\TestSuite">
+<suite id="s1-s1-s1" name="Angular CANOPI Initiated" source="C:\Users\rishabja\OneDrive - AMDOCS\Backup Folders\Desktop\GameDetails\TestSuite\Angular_CANOPI Initiated.robot">
+<test id="s1-s1-s1-t1" name="TC_Initial Suite Setup Keywords Initialization">
+<kw name="Suite Setup Keywords">
+<kw name="Set Log Level" library="BuiltIn">
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<arguments>
+<arg>DEBUG</arg>
+</arguments>
+<msg timestamp="20210131 12:25:57.168" level="INFO">Log level changed from INFO to DEBUG.</msg>
+<status status="PASS" starttime="20210131 12:25:57.167" endtime="20210131 12:25:57.168"></status>
+</kw>
+<kw name="Create Excel File" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.169" endtime="20210131 12:25:57.184"></status>
+</kw>
+<kw name="Add a Value">
+<doc>Testing excel.py code to Add Value to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>A1</arg>
+<arg>SR.NO</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.186" endtime="20210131 12:25:57.187"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.187" endtime="20210131 12:25:57.218"></status>
+</kw>
+<kw name="Add Value" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${CellCords}</arg>
+<arg>${Value}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.219" endtime="20210131 12:25:57.237"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:25:57.185" endtime="20210131 12:25:57.238"></status>
+</kw>
+<kw name="Add a Value">
+<doc>Testing excel.py code to Add Value to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>B1</arg>
+<arg>Game Name</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.248" endtime="20210131 12:25:57.250"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.252" endtime="20210131 12:25:57.288"></status>
+</kw>
+<kw name="Add Value" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${CellCords}</arg>
+<arg>${Value}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.289" endtime="20210131 12:25:57.309"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:25:57.238" endtime="20210131 12:25:57.310"></status>
+</kw>
+<kw name="Add a Value">
+<doc>Testing excel.py code to Add Value to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>C1</arg>
+<arg>Page URL</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.312" endtime="20210131 12:25:57.313"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.313" endtime="20210131 12:25:57.344"></status>
+</kw>
+<kw name="Add Value" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${CellCords}</arg>
+<arg>${Value}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.345" endtime="20210131 12:25:57.367"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:25:57.311" endtime="20210131 12:25:57.367"></status>
+</kw>
+<kw name="Add a Value">
+<doc>Testing excel.py code to Add Value to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>D1</arg>
+<arg>Page Status</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.369" endtime="20210131 12:25:57.370"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.370" endtime="20210131 12:25:57.405"></status>
+</kw>
+<kw name="Add Value" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${CellCords}</arg>
+<arg>${Value}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.405" endtime="20210131 12:25:57.424"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:25:57.368" endtime="20210131 12:25:57.425"></status>
+</kw>
+<kw name="Add a Value">
+<doc>Testing excel.py code to Add Value to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>E1</arg>
+<arg>Tournament Count</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.426" endtime="20210131 12:25:57.427"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.428" endtime="20210131 12:25:57.457"></status>
+</kw>
+<kw name="Add Value" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${CellCords}</arg>
+<arg>${Value}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.458" endtime="20210131 12:25:57.488"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:25:57.425" endtime="20210131 12:25:57.490"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:25:57.166" endtime="20210131 12:25:57.491"></status>
+</kw>
+<doc>Setting Up Excels.</doc>
+<status status="PASS" starttime="20210131 12:25:57.164" endtime="20210131 12:25:57.492" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t2" name="TC#1 Open Game Website">
+<kw name="Setup Browser" library="browser_setup">
+<doc>Sets up browser based upon the value of chrome</doc>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${GLOBAL_SELENIUM_BROWSER}' == 'chrome'</arg>
+<arg>Setup Browser Chrome</arg>
+</arguments>
+<kw name="Setup Browser Chrome" library="browser_setup">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys</arg>
+</arguments>
+<assign>
+<var>${chrome options}</var>
+</assign>
+<msg timestamp="20210131 12:25:57.502" level="INFO">${chrome options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0DBED370&gt;</msg>
+<status status="PASS" starttime="20210131 12:25:57.501" endtime="20210131 12:25:57.502"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${chrome options}</arg>
+<arg>add_argument</arg>
+<arg>no-sandbox</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.503" endtime="20210131 12:25:57.504"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${HEADLESS}==True</arg>
+<arg>Call Method</arg>
+<arg>${chrome options}</arg>
+<arg>add_argument</arg>
+<arg>headless</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.505" endtime="20210131 12:25:57.507"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].DesiredCapabilities.CHROME</arg>
+<arg>sys</arg>
+</arguments>
+<assign>
+<var>${dc}</var>
+</assign>
+<msg timestamp="20210131 12:25:57.509" level="INFO">${dc} = {'browserName': 'chrome', 'version': '', 'platform': 'ANY'}</msg>
+<status status="PASS" starttime="20210131 12:25:57.508" endtime="20210131 12:25:57.509"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${dc}</arg>
+<arg>elementScrollBehavior</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:25:57.510" endtime="20210131 12:25:57.510"></status>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Chrome</arg>
+<arg>desired_capabilities=${dc}</arg>
+<arg>chrome_options=${chrome_options}</arg>
+</arguments>
+<msg timestamp="20210131 12:25:57.512" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20210131 12:25:58.066" level="DEBUG">POST http://127.0.0.1:4647/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["no-sandbox"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "elementScrollBehavior": "1", "goog:chromeOptions": {"extensions": [], "args": ["no-sandbox"]}}}</msg>
+<msg timestamp="20210131 12:25:58.074" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4647</msg>
+<msg timestamp="20210131 12:26:00.134" level="DEBUG">http://127.0.0.1:4647 "POST /session HTTP/1.1" 200 721</msg>
+<msg timestamp="20210131 12:26:00.136" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:00.136" level="DEBUG">Created Chrome WebDriver instance with session id 91736abd0b97a3be6f0c0fb4ba1f2dff.</msg>
+<status status="PASS" starttime="20210131 12:25:57.511" endtime="20210131 12:26:00.136"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${GLOBAL_SELENIUM_BROWSER_CAPABILITIES}</arg>
+<arg>${dc}</arg>
+</arguments>
+<msg timestamp="20210131 12:26:00.140" level="INFO">${GLOBAL_SELENIUM_BROWSER_CAPABILITIES} = {'browserName': 'chrome', 'version': '', 'platform': 'ANY', 'elementScrollBehavior': '1', 'goog:chromeOptions': {'extensions': [], 'args': ['no-sandbox']}}</msg>
+<status status="PASS" starttime="20210131 12:26:00.137" endtime="20210131 12:26:00.141"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:25:57.499" endtime="20210131 12:26:00.142"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:25:57.498" endtime="20210131 12:26:00.142"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Running with ${GLOBAL_SELENIUM_BROWSER}</arg>
+</arguments>
+<msg timestamp="20210131 12:26:00.143" level="INFO">Running with chrome</msg>
+<status status="PASS" starttime="20210131 12:26:00.143" endtime="20210131 12:26:00.144"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:25:57.496" endtime="20210131 12:26:00.144"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20210131 12:26:00.146" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/window/maximize {}</msg>
+<msg timestamp="20210131 12:26:01.315" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/window/maximize HTTP/1.1" 200 51</msg>
+<msg timestamp="20210131 12:26:01.316" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:00.145" endtime="20210131 12:26:01.317"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.game.tv/</arg>
+</arguments>
+<msg timestamp="20210131 12:26:01.318" level="INFO">Opening url 'https://www.game.tv/'</msg>
+<msg timestamp="20210131 12:26:01.319" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/url {"url": "https://www.game.tv/"}</msg>
+<msg timestamp="20210131 12:26:10.877" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/url HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:10.879" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:01.317" endtime="20210131 12:26:10.880"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//img[@class="logo-img"]</arg>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210131 12:26:10.883" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//img[@class=\"logo-img\"]"}</msg>
+<msg timestamp="20210131 12:26:11.075" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:11.078" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:10.881" endtime="20210131 12:26:11.080"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>//img[@alt="Garena Free Fire Tournaments"]</arg>
+</arguments>
+<msg timestamp="20210131 12:26:11.088" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//img[@alt=\"Garena Free Fire Tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:11.622" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:11.624" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:11.625" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/actions {"actions": [{"type": "pointer", "parameters": {"pointerType": "mouse"}, "id": "mouse", "actions": [{"type": "pointerMove", "duration": 250, "x": 0, "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "e5d3b95f-4540-4492-b4a7-007ea252eb8f"}}]}, {"type": "key", "id": "key", "actions": [{"type": "pause", "duration": 0}]}]}</msg>
+<msg timestamp="20210131 12:26:12.307" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/actions HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:12.310" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:11.084" endtime="20210131 12:26:12.312"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Welcome to Game TV</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:12.315" endtime="20210131 12:26:12.318"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>SR.NO-Name of Game-TournamentCount</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:12.320" endtime="20210131 12:26:12.322"></status>
+</kw>
+<kw name="${i} IN RANGE [ 90 | 150 ]" type="for">
+<kw name="${i} = 90" type="foritem">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GametilesVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:12.330" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[90]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:12.562" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:12.563" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:12.328" endtime="20210131 12:26:12.564"></status>
+</kw>
+<msg timestamp="20210131 12:26:12.564" level="INFO">${GametilesVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:12.326" endtime="20210131 12:26:12.565"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>"${GametilesVisiblity}" == "False"</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:12.566" endtime="20210131 12:26:12.568"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:12.571" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[90]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:12.674" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:12.676" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:12.677" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/2bf265db-bafa-4e43-b831-33c7a1e27649/text {"id": "2bf265db-bafa-4e43-b831-33c7a1e27649"}</msg>
+<msg timestamp="20210131 12:26:12.867" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/2bf265db-bafa-4e43-b831-33c7a1e27649/text HTTP/1.1" 200 37</msg>
+<msg timestamp="20210131 12:26:12.868" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:12.870" level="INFO">${GameName} = Yu-Gi-Oh! TCG Tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:12.569" endtime="20210131 12:26:12.870"></status>
+</kw>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GameName}</arg>
+<arg>T</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:12.872" level="INFO">${GameName} = ['Yu-Gi-Oh! ', 'CG ', 'ournaments']</msg>
+<status status="PASS" starttime="20210131 12:26:12.871" endtime="20210131 12:26:12.873"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:12.875" level="INFO">Clicking element '//*[@id="game_list"]/ul/li[90]/a/figcaption'.</msg>
+<msg timestamp="20210131 12:26:12.875" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[90]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:12.990" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:12.992" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:12.994" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/2bf265db-bafa-4e43-b831-33c7a1e27649/click {"id": "2bf265db-bafa-4e43-b831-33c7a1e27649"}</msg>
+<msg timestamp="20210131 12:26:17.564" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/2bf265db-bafa-4e43-b831-33c7a1e27649/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:17.564" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:12.874" endtime="20210131 12:26:17.565"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${gameUrlVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<msg timestamp="20210131 12:26:17.567" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:17.603" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:17.604" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:17.566" endtime="20210131 12:26:17.606"></status>
+</kw>
+<msg timestamp="20210131 12:26:17.608" level="INFO">${gameUrlVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:17.565" endtime="20210131 12:26:17.609"></status>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<doc>Sets variable based on the given condition.</doc>
+<arguments>
+<arg>"${gameUrlVisiblity}" == "True"</arg>
+<arg>${gameStatusCode}</arg>
+</arguments>
+<assign>
+<var>${gameStatusCode}</var>
+</assign>
+<msg timestamp="20210131 12:26:17.614" level="INFO">${gameStatusCode} = 200</msg>
+<status status="PASS" starttime="20210131 12:26:17.612" endtime="20210131 12:26:17.615"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>return window.location.href;</arg>
+</arguments>
+<assign>
+<var>${gameUrl}</var>
+</assign>
+<msg timestamp="20210131 12:26:17.618" level="INFO">Executing JavaScript:
+return window.location.href;
+Without any arguments.</msg>
+<msg timestamp="20210131 12:26:17.619" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync {"script": "return window.location.href;", "args": []}</msg>
+<msg timestamp="20210131 12:26:17.685" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync HTTP/1.1" 200 75</msg>
+<msg timestamp="20210131 12:26:17.686" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:17.686" level="INFO">${gameUrl} = https://www.game.tv/find-tournaments/_yu-gi-oh!_tcg-tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:17.616" endtime="20210131 12:26:17.687"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${tournamentCount}</var>
+</assign>
+<msg timestamp="20210131 12:26:17.688" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:17.704" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:17.705" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:17.706" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/1570514e-3c68-400b-bc71-910587840616/text {"id": "1570514e-3c68-400b-bc71-910587840616"}</msg>
+<msg timestamp="20210131 12:26:17.737" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/1570514e-3c68-400b-bc71-910587840616/text HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:17.738" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:17.738" level="INFO">${tournamentCount} = 30</msg>
+<status status="PASS" starttime="20210131 12:26:17.687" endtime="20210131 12:26:17.738"></status>
+</kw>
+<kw name="To Append Values">
+<doc>Testing excel.py code to Add 3 Values to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>${i}</arg>
+<arg>${GameName}[0]</arg>
+<arg>${gameUrl}</arg>
+<arg>${gameStatusCode}</arg>
+<arg>${tournamentCount}</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:17.741" endtime="20210131 12:26:17.742"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:17.743" endtime="20210131 12:26:17.777"></status>
+</kw>
+<kw name="Append Values" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${Value1}</arg>
+<arg>${Value2}</arg>
+<arg>${Value3}</arg>
+<arg>${Value4}</arg>
+<arg>${Value5}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:17.778" endtime="20210131 12:26:17.817"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:17.739" endtime="20210131 12:26:17.818"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}-${GameName}[0]-${tournamentCount}-${gameurl}-${gameStatusCode}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:17.818" endtime="20210131 12:26:17.819"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<msg timestamp="20210131 12:26:17.821" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/back {}</msg>
+<msg timestamp="20210131 12:26:19.103" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/back HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:19.104" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:17.820" endtime="20210131 12:26:19.105"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:12.325" endtime="20210131 12:26:19.105"></status>
+</kw>
+<kw name="${i} = 91" type="foritem">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GametilesVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:19.108" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[91]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:19.168" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:19.169" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:19.107" endtime="20210131 12:26:19.170"></status>
+</kw>
+<msg timestamp="20210131 12:26:19.171" level="INFO">${GametilesVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:19.106" endtime="20210131 12:26:19.171"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>"${GametilesVisiblity}" == "False"</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:19.172" endtime="20210131 12:26:19.174"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:19.176" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[91]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:20.114" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:20.115" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:20.116" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/1e4550fa-5595-4c42-abc8-b8ddd38e30de/text {"id": "1e4550fa-5595-4c42-abc8-b8ddd38e30de"}</msg>
+<msg timestamp="20210131 12:26:20.294" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/1e4550fa-5595-4c42-abc8-b8ddd38e30de/text HTTP/1.1" 200 39</msg>
+<msg timestamp="20210131 12:26:20.295" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:20.297" level="INFO">${GameName} = Werewolf Online Tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:19.175" endtime="20210131 12:26:20.298"></status>
+</kw>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GameName}</arg>
+<arg>T</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:20.304" level="INFO">${GameName} = ['Werewolf Online ', 'ournaments']</msg>
+<status status="PASS" starttime="20210131 12:26:20.301" endtime="20210131 12:26:20.305"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:20.310" level="INFO">Clicking element '//*[@id="game_list"]/ul/li[91]/a/figcaption'.</msg>
+<msg timestamp="20210131 12:26:20.311" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[91]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:20.450" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:20.452" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:20.453" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/1e4550fa-5595-4c42-abc8-b8ddd38e30de/click {"id": "1e4550fa-5595-4c42-abc8-b8ddd38e30de"}</msg>
+<msg timestamp="20210131 12:26:22.990" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/1e4550fa-5595-4c42-abc8-b8ddd38e30de/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:22.991" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:20.306" endtime="20210131 12:26:22.992"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${gameUrlVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<msg timestamp="20210131 12:26:22.998" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:23.124" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:23.125" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:22.996" endtime="20210131 12:26:23.126"></status>
+</kw>
+<msg timestamp="20210131 12:26:23.126" level="INFO">${gameUrlVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:22.994" endtime="20210131 12:26:23.127"></status>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<doc>Sets variable based on the given condition.</doc>
+<arguments>
+<arg>"${gameUrlVisiblity}" == "True"</arg>
+<arg>${gameStatusCode}</arg>
+</arguments>
+<assign>
+<var>${gameStatusCode}</var>
+</assign>
+<msg timestamp="20210131 12:26:23.128" level="INFO">${gameStatusCode} = 200</msg>
+<status status="PASS" starttime="20210131 12:26:23.127" endtime="20210131 12:26:23.128"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>return window.location.href;</arg>
+</arguments>
+<assign>
+<var>${gameUrl}</var>
+</assign>
+<msg timestamp="20210131 12:26:23.130" level="INFO">Executing JavaScript:
+return window.location.href;
+Without any arguments.</msg>
+<msg timestamp="20210131 12:26:23.131" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync {"script": "return window.location.href;", "args": []}</msg>
+<msg timestamp="20210131 12:26:23.141" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync HTTP/1.1" 200 77</msg>
+<msg timestamp="20210131 12:26:23.143" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:23.144" level="INFO">${gameUrl} = https://www.game.tv/find-tournaments/-werewolf-online-tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:23.129" endtime="20210131 12:26:23.144"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${tournamentCount}</var>
+</assign>
+<msg timestamp="20210131 12:26:23.146" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:23.161" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:23.162" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:23.163" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/29cdc109-4cf0-4bb0-83e5-cd275e316f13/text {"id": "29cdc109-4cf0-4bb0-83e5-cd275e316f13"}</msg>
+<msg timestamp="20210131 12:26:23.189" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/29cdc109-4cf0-4bb0-83e5-cd275e316f13/text HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:23.190" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:23.191" level="INFO">${tournamentCount} = 19</msg>
+<status status="PASS" starttime="20210131 12:26:23.145" endtime="20210131 12:26:23.191"></status>
+</kw>
+<kw name="To Append Values">
+<doc>Testing excel.py code to Add 3 Values to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>${i}</arg>
+<arg>${GameName}[0]</arg>
+<arg>${gameUrl}</arg>
+<arg>${gameStatusCode}</arg>
+<arg>${tournamentCount}</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:23.194" endtime="20210131 12:26:23.196"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:23.197" endtime="20210131 12:26:23.242"></status>
+</kw>
+<kw name="Append Values" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${Value1}</arg>
+<arg>${Value2}</arg>
+<arg>${Value3}</arg>
+<arg>${Value4}</arg>
+<arg>${Value5}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:23.243" endtime="20210131 12:26:23.288"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:23.192" endtime="20210131 12:26:23.290"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}-${GameName}[0]-${tournamentCount}-${gameurl}-${gameStatusCode}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:23.290" endtime="20210131 12:26:23.292"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<msg timestamp="20210131 12:26:23.294" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/back {}</msg>
+<msg timestamp="20210131 12:26:24.713" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/back HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:24.715" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:23.293" endtime="20210131 12:26:24.715"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:19.106" endtime="20210131 12:26:24.715"></status>
+</kw>
+<kw name="${i} = 92" type="foritem">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GametilesVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:24.718" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[92]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:25.404" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:25.406" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:24.717" endtime="20210131 12:26:25.407"></status>
+</kw>
+<msg timestamp="20210131 12:26:25.408" level="INFO">${GametilesVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:24.716" endtime="20210131 12:26:25.409"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>"${GametilesVisiblity}" == "False"</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:25.410" endtime="20210131 12:26:25.412"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:25.416" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[92]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:25.616" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:25.617" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:25.618" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/23f04d08-d274-476b-8d20-c58b11bc8ff6/text {"id": "23f04d08-d274-476b-8d20-c58b11bc8ff6"}</msg>
+<msg timestamp="20210131 12:26:25.735" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/23f04d08-d274-476b-8d20-c58b11bc8ff6/text HTTP/1.1" 200 40</msg>
+<msg timestamp="20210131 12:26:25.736" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:25.737" level="INFO">${GameName} = Pokemon Showdown Tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:25.413" endtime="20210131 12:26:25.737"></status>
+</kw>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GameName}</arg>
+<arg>T</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:25.739" level="INFO">${GameName} = ['Pokemon Showdown ', 'ournaments']</msg>
+<status status="PASS" starttime="20210131 12:26:25.738" endtime="20210131 12:26:25.740"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:25.741" level="INFO">Clicking element '//*[@id="game_list"]/ul/li[92]/a/figcaption'.</msg>
+<msg timestamp="20210131 12:26:25.742" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[92]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:25.819" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:25.822" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:25.824" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/23f04d08-d274-476b-8d20-c58b11bc8ff6/click {"id": "23f04d08-d274-476b-8d20-c58b11bc8ff6"}</msg>
+<msg timestamp="20210131 12:26:28.857" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/23f04d08-d274-476b-8d20-c58b11bc8ff6/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:28.858" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:25.740" endtime="20210131 12:26:28.859"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${gameUrlVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<msg timestamp="20210131 12:26:28.864" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:28.902" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:28.903" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:28.862" endtime="20210131 12:26:28.904"></status>
+</kw>
+<msg timestamp="20210131 12:26:28.905" level="INFO">${gameUrlVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:28.860" endtime="20210131 12:26:28.905"></status>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<doc>Sets variable based on the given condition.</doc>
+<arguments>
+<arg>"${gameUrlVisiblity}" == "True"</arg>
+<arg>${gameStatusCode}</arg>
+</arguments>
+<assign>
+<var>${gameStatusCode}</var>
+</assign>
+<msg timestamp="20210131 12:26:28.908" level="INFO">${gameStatusCode} = 200</msg>
+<status status="PASS" starttime="20210131 12:26:28.906" endtime="20210131 12:26:28.908"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>return window.location.href;</arg>
+</arguments>
+<assign>
+<var>${gameUrl}</var>
+</assign>
+<msg timestamp="20210131 12:26:28.911" level="INFO">Executing JavaScript:
+return window.location.href;
+Without any arguments.</msg>
+<msg timestamp="20210131 12:26:28.912" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync {"script": "return window.location.href;", "args": []}</msg>
+<msg timestamp="20210131 12:26:28.923" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync HTTP/1.1" 200 78</msg>
+<msg timestamp="20210131 12:26:28.925" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:28.926" level="INFO">${gameUrl} = https://www.game.tv/find-tournaments/-pokemon-showdown-tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:28.909" endtime="20210131 12:26:28.926"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${tournamentCount}</var>
+</assign>
+<msg timestamp="20210131 12:26:28.929" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:28.948" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:28.949" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:28.950" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/9a27ed06-eeaa-4a78-8217-9a8ad5c79719/text {"id": "9a27ed06-eeaa-4a78-8217-9a8ad5c79719"}</msg>
+<msg timestamp="20210131 12:26:28.992" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/9a27ed06-eeaa-4a78-8217-9a8ad5c79719/text HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:28.993" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:28.994" level="INFO">${tournamentCount} = 63</msg>
+<status status="PASS" starttime="20210131 12:26:28.927" endtime="20210131 12:26:28.994"></status>
+</kw>
+<kw name="To Append Values">
+<doc>Testing excel.py code to Add 3 Values to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>${i}</arg>
+<arg>${GameName}[0]</arg>
+<arg>${gameUrl}</arg>
+<arg>${gameStatusCode}</arg>
+<arg>${tournamentCount}</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:29.000" endtime="20210131 12:26:29.003"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:29.004" endtime="20210131 12:26:29.046"></status>
+</kw>
+<kw name="Append Values" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${Value1}</arg>
+<arg>${Value2}</arg>
+<arg>${Value3}</arg>
+<arg>${Value4}</arg>
+<arg>${Value5}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:29.047" endtime="20210131 12:26:29.094"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:28.996" endtime="20210131 12:26:29.096"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}-${GameName}[0]-${tournamentCount}-${gameurl}-${gameStatusCode}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:29.097" endtime="20210131 12:26:29.099"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<msg timestamp="20210131 12:26:29.100" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/back {}</msg>
+<msg timestamp="20210131 12:26:31.093" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/back HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:31.094" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:29.100" endtime="20210131 12:26:31.095"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:24.716" endtime="20210131 12:26:31.096"></status>
+</kw>
+<kw name="${i} = 93" type="foritem">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GametilesVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:31.101" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[93]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:31.258" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:31.259" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:31.099" endtime="20210131 12:26:31.260"></status>
+</kw>
+<msg timestamp="20210131 12:26:31.262" level="INFO">${GametilesVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:31.098" endtime="20210131 12:26:31.263"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>"${GametilesVisiblity}" == "False"</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:31.264" endtime="20210131 12:26:31.269"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:31.272" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[93]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:31.353" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:31.355" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:31.358" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/bb75d476-187b-4faa-814a-c309ffdfe390/text {"id": "bb75d476-187b-4faa-814a-c309ffdfe390"}</msg>
+<msg timestamp="20210131 12:26:31.452" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/bb75d476-187b-4faa-814a-c309ffdfe390/text HTTP/1.1" 200 32</msg>
+<msg timestamp="20210131 12:26:31.453" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:31.455" level="INFO">${GameName} = NBA 2k20 Tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:31.270" endtime="20210131 12:26:31.455"></status>
+</kw>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GameName}</arg>
+<arg>T</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:31.457" level="INFO">${GameName} = ['NBA 2k20 ', 'ournaments']</msg>
+<status status="PASS" starttime="20210131 12:26:31.456" endtime="20210131 12:26:31.457"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:31.458" level="INFO">Clicking element '//*[@id="game_list"]/ul/li[93]/a/figcaption'.</msg>
+<msg timestamp="20210131 12:26:31.459" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[93]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:31.530" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:31.532" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:31.533" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/bb75d476-187b-4faa-814a-c309ffdfe390/click {"id": "bb75d476-187b-4faa-814a-c309ffdfe390"}</msg>
+<msg timestamp="20210131 12:26:35.407" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/bb75d476-187b-4faa-814a-c309ffdfe390/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:35.411" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:31.458" endtime="20210131 12:26:35.415"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${gameUrlVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<msg timestamp="20210131 12:26:35.420" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:35.456" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:35.457" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:35.419" endtime="20210131 12:26:35.458"></status>
+</kw>
+<msg timestamp="20210131 12:26:35.460" level="INFO">${gameUrlVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:35.417" endtime="20210131 12:26:35.460"></status>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<doc>Sets variable based on the given condition.</doc>
+<arguments>
+<arg>"${gameUrlVisiblity}" == "True"</arg>
+<arg>${gameStatusCode}</arg>
+</arguments>
+<assign>
+<var>${gameStatusCode}</var>
+</assign>
+<msg timestamp="20210131 12:26:35.462" level="INFO">${gameStatusCode} = 200</msg>
+<status status="PASS" starttime="20210131 12:26:35.461" endtime="20210131 12:26:35.462"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>return window.location.href;</arg>
+</arguments>
+<assign>
+<var>${gameUrl}</var>
+</assign>
+<msg timestamp="20210131 12:26:35.463" level="INFO">Executing JavaScript:
+return window.location.href;
+Without any arguments.</msg>
+<msg timestamp="20210131 12:26:35.464" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync {"script": "return window.location.href;", "args": []}</msg>
+<msg timestamp="20210131 12:26:35.470" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync HTTP/1.1" 200 70</msg>
+<msg timestamp="20210131 12:26:35.470" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:35.471" level="INFO">${gameUrl} = https://www.game.tv/find-tournaments/-nba-2k20-tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:35.462" endtime="20210131 12:26:35.471"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${tournamentCount}</var>
+</assign>
+<msg timestamp="20210131 12:26:35.472" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:35.487" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:35.487" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:35.488" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/32d1903d-1957-4d1b-a2a3-68d7f22ea066/text {"id": "32d1903d-1957-4d1b-a2a3-68d7f22ea066"}</msg>
+<msg timestamp="20210131 12:26:35.561" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/32d1903d-1957-4d1b-a2a3-68d7f22ea066/text HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:35.561" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:35.562" level="INFO">${tournamentCount} = 66</msg>
+<status status="PASS" starttime="20210131 12:26:35.472" endtime="20210131 12:26:35.562"></status>
+</kw>
+<kw name="To Append Values">
+<doc>Testing excel.py code to Add 3 Values to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>${i}</arg>
+<arg>${GameName}[0]</arg>
+<arg>${gameUrl}</arg>
+<arg>${gameStatusCode}</arg>
+<arg>${tournamentCount}</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:35.565" endtime="20210131 12:26:35.567"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:35.568" endtime="20210131 12:26:35.602"></status>
+</kw>
+<kw name="Append Values" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${Value1}</arg>
+<arg>${Value2}</arg>
+<arg>${Value3}</arg>
+<arg>${Value4}</arg>
+<arg>${Value5}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:35.603" endtime="20210131 12:26:35.644"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:35.563" endtime="20210131 12:26:35.646"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}-${GameName}[0]-${tournamentCount}-${gameurl}-${gameStatusCode}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:35.647" endtime="20210131 12:26:35.648"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<msg timestamp="20210131 12:26:35.649" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/back {}</msg>
+<msg timestamp="20210131 12:26:37.212" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/back HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:37.215" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:35.649" endtime="20210131 12:26:37.216"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:31.097" endtime="20210131 12:26:37.219"></status>
+</kw>
+<kw name="${i} = 94" type="foritem">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GametilesVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:37.229" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[94]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:37.800" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:37.802" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:37.227" endtime="20210131 12:26:37.805"></status>
+</kw>
+<msg timestamp="20210131 12:26:37.807" level="INFO">${GametilesVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:37.225" endtime="20210131 12:26:37.808"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>"${GametilesVisiblity}" == "False"</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:37.809" endtime="20210131 12:26:37.812"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:37.816" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[94]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:37.921" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:37.923" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:37.925" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/fc0a6b9c-d79f-4535-bde4-26fef4cb26a2/text {"id": "fc0a6b9c-d79f-4535-bde4-26fef4cb26a2"}</msg>
+<msg timestamp="20210131 12:26:37.998" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/fc0a6b9c-d79f-4535-bde4-26fef4cb26a2/text HTTP/1.1" 200 30</msg>
+<msg timestamp="20210131 12:26:38.000" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:38.002" level="INFO">${GameName} = Dota 2 Tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:37.813" endtime="20210131 12:26:38.002"></status>
+</kw>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GameName}</arg>
+<arg>T</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:38.003" level="INFO">${GameName} = ['Dota 2 ', 'ournaments']</msg>
+<status status="PASS" starttime="20210131 12:26:38.002" endtime="20210131 12:26:38.004"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:38.007" level="INFO">Clicking element '//*[@id="game_list"]/ul/li[94]/a/figcaption'.</msg>
+<msg timestamp="20210131 12:26:38.009" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[94]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:38.082" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:38.084" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:38.086" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/fc0a6b9c-d79f-4535-bde4-26fef4cb26a2/click {"id": "fc0a6b9c-d79f-4535-bde4-26fef4cb26a2"}</msg>
+<msg timestamp="20210131 12:26:40.635" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/fc0a6b9c-d79f-4535-bde4-26fef4cb26a2/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:40.638" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:38.005" endtime="20210131 12:26:40.641"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${gameUrlVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<msg timestamp="20210131 12:26:40.648" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:40.697" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:40.698" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:40.645" endtime="20210131 12:26:40.699"></status>
+</kw>
+<msg timestamp="20210131 12:26:40.700" level="INFO">${gameUrlVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:40.642" endtime="20210131 12:26:40.700"></status>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<doc>Sets variable based on the given condition.</doc>
+<arguments>
+<arg>"${gameUrlVisiblity}" == "True"</arg>
+<arg>${gameStatusCode}</arg>
+</arguments>
+<assign>
+<var>${gameStatusCode}</var>
+</assign>
+<msg timestamp="20210131 12:26:40.703" level="INFO">${gameStatusCode} = 200</msg>
+<status status="PASS" starttime="20210131 12:26:40.701" endtime="20210131 12:26:40.703"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>return window.location.href;</arg>
+</arguments>
+<assign>
+<var>${gameUrl}</var>
+</assign>
+<msg timestamp="20210131 12:26:40.707" level="INFO">Executing JavaScript:
+return window.location.href;
+Without any arguments.</msg>
+<msg timestamp="20210131 12:26:40.707" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync {"script": "return window.location.href;", "args": []}</msg>
+<msg timestamp="20210131 12:26:40.717" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync HTTP/1.1" 200 67</msg>
+<msg timestamp="20210131 12:26:40.718" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:40.719" level="INFO">${gameUrl} = https://www.game.tv/find-tournaments/dota-2-tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:40.705" endtime="20210131 12:26:40.720"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${tournamentCount}</var>
+</assign>
+<msg timestamp="20210131 12:26:40.722" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:40.747" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:40.748" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:40.749" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/6ce69ac7-c215-45d4-9da6-7e06deb3c31c/text {"id": "6ce69ac7-c215-45d4-9da6-7e06deb3c31c"}</msg>
+<msg timestamp="20210131 12:26:40.789" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/6ce69ac7-c215-45d4-9da6-7e06deb3c31c/text HTTP/1.1" 200 15</msg>
+<msg timestamp="20210131 12:26:40.790" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:40.791" level="INFO">${tournamentCount} = 159</msg>
+<status status="PASS" starttime="20210131 12:26:40.721" endtime="20210131 12:26:40.791"></status>
+</kw>
+<kw name="To Append Values">
+<doc>Testing excel.py code to Add 3 Values to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>${i}</arg>
+<arg>${GameName}[0]</arg>
+<arg>${gameUrl}</arg>
+<arg>${gameStatusCode}</arg>
+<arg>${tournamentCount}</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:40.795" endtime="20210131 12:26:40.797"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:40.799" endtime="20210131 12:26:40.848"></status>
+</kw>
+<kw name="Append Values" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${Value1}</arg>
+<arg>${Value2}</arg>
+<arg>${Value3}</arg>
+<arg>${Value4}</arg>
+<arg>${Value5}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:40.853" endtime="20210131 12:26:40.942"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:40.792" endtime="20210131 12:26:40.943"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}-${GameName}[0]-${tournamentCount}-${gameurl}-${gameStatusCode}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:40.943" endtime="20210131 12:26:40.945"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<msg timestamp="20210131 12:26:40.947" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/back {}</msg>
+<msg timestamp="20210131 12:26:42.640" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/back HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:42.641" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:40.946" endtime="20210131 12:26:42.643"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:37.223" endtime="20210131 12:26:42.644"></status>
+</kw>
+<kw name="${i} = 95" type="foritem">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GametilesVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:42.651" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[95]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:42.762" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:42.763" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:42.649" endtime="20210131 12:26:42.765"></status>
+</kw>
+<msg timestamp="20210131 12:26:42.766" level="INFO">${GametilesVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:42.647" endtime="20210131 12:26:42.766"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>"${GametilesVisiblity}" == "False"</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:42.767" endtime="20210131 12:26:42.768"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:42.771" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[95]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:42.840" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:42.842" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:42.845" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/1be02216-344c-4848-92d3-5b4f5f2ab9ea/text {"id": "1be02216-344c-4848-92d3-5b4f5f2ab9ea"}</msg>
+<msg timestamp="20210131 12:26:42.948" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/1be02216-344c-4848-92d3-5b4f5f2ab9ea/text HTTP/1.1" 200 36</msg>
+<msg timestamp="20210131 12:26:42.948" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:42.950" level="INFO">${GameName} = Apex Legends Tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:42.769" endtime="20210131 12:26:42.952"></status>
+</kw>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GameName}</arg>
+<arg>T</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:42.954" level="INFO">${GameName} = ['Apex Legends ', 'ournaments']</msg>
+<status status="PASS" starttime="20210131 12:26:42.953" endtime="20210131 12:26:42.955"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:42.957" level="INFO">Clicking element '//*[@id="game_list"]/ul/li[95]/a/figcaption'.</msg>
+<msg timestamp="20210131 12:26:42.957" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[95]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:43.034" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:43.036" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:43.037" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/1be02216-344c-4848-92d3-5b4f5f2ab9ea/click {"id": "1be02216-344c-4848-92d3-5b4f5f2ab9ea"}</msg>
+<msg timestamp="20210131 12:26:47.062" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/1be02216-344c-4848-92d3-5b4f5f2ab9ea/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:47.064" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:42.956" endtime="20210131 12:26:47.065"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${gameUrlVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<msg timestamp="20210131 12:26:47.072" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:47.098" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:47.099" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:47.070" endtime="20210131 12:26:47.100"></status>
+</kw>
+<msg timestamp="20210131 12:26:47.101" level="INFO">${gameUrlVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:47.066" endtime="20210131 12:26:47.101"></status>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<doc>Sets variable based on the given condition.</doc>
+<arguments>
+<arg>"${gameUrlVisiblity}" == "True"</arg>
+<arg>${gameStatusCode}</arg>
+</arguments>
+<assign>
+<var>${gameStatusCode}</var>
+</assign>
+<msg timestamp="20210131 12:26:47.105" level="INFO">${gameStatusCode} = 200</msg>
+<status status="PASS" starttime="20210131 12:26:47.102" endtime="20210131 12:26:47.106"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>return window.location.href;</arg>
+</arguments>
+<assign>
+<var>${gameUrl}</var>
+</assign>
+<msg timestamp="20210131 12:26:47.109" level="INFO">Executing JavaScript:
+return window.location.href;
+Without any arguments.</msg>
+<msg timestamp="20210131 12:26:47.110" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync {"script": "return window.location.href;", "args": []}</msg>
+<msg timestamp="20210131 12:26:47.149" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync HTTP/1.1" 200 74</msg>
+<msg timestamp="20210131 12:26:47.150" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:47.151" level="INFO">${gameUrl} = https://www.game.tv/find-tournaments/-apex-legends-tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:47.107" endtime="20210131 12:26:47.152"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${tournamentCount}</var>
+</assign>
+<msg timestamp="20210131 12:26:47.155" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:47.180" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:47.181" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:47.182" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/f46365ea-aeec-4ead-9315-6ae9af67ae75/text {"id": "f46365ea-aeec-4ead-9315-6ae9af67ae75"}</msg>
+<msg timestamp="20210131 12:26:47.242" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/f46365ea-aeec-4ead-9315-6ae9af67ae75/text HTTP/1.1" 200 15</msg>
+<msg timestamp="20210131 12:26:47.243" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:47.245" level="INFO">${tournamentCount} = 264</msg>
+<status status="PASS" starttime="20210131 12:26:47.153" endtime="20210131 12:26:47.246"></status>
+</kw>
+<kw name="To Append Values">
+<doc>Testing excel.py code to Add 3 Values to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>${i}</arg>
+<arg>${GameName}[0]</arg>
+<arg>${gameUrl}</arg>
+<arg>${gameStatusCode}</arg>
+<arg>${tournamentCount}</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:47.252" endtime="20210131 12:26:47.254"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:47.255" endtime="20210131 12:26:47.295"></status>
+</kw>
+<kw name="Append Values" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${Value1}</arg>
+<arg>${Value2}</arg>
+<arg>${Value3}</arg>
+<arg>${Value4}</arg>
+<arg>${Value5}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:47.297" endtime="20210131 12:26:47.344"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:47.247" endtime="20210131 12:26:47.344"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}-${GameName}[0]-${tournamentCount}-${gameurl}-${gameStatusCode}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:47.345" endtime="20210131 12:26:47.347"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<msg timestamp="20210131 12:26:47.348" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/back {}</msg>
+<msg timestamp="20210131 12:26:48.929" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/back HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:48.931" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:47.347" endtime="20210131 12:26:48.932"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:42.645" endtime="20210131 12:26:48.933"></status>
+</kw>
+<kw name="${i} = 96" type="foritem">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GametilesVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:48.941" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[96]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:49.336" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:49.338" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:48.939" endtime="20210131 12:26:49.340"></status>
+</kw>
+<msg timestamp="20210131 12:26:49.343" level="INFO">${GametilesVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:48.937" endtime="20210131 12:26:49.344"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>"${GametilesVisiblity}" == "False"</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:49.345" endtime="20210131 12:26:49.353"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:49.356" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[96]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:49.431" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:49.432" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:49.432" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/fc8e73d3-2b79-4947-b926-a7298c59e09b/text {"id": "fc8e73d3-2b79-4947-b926-a7298c59e09b"}</msg>
+<msg timestamp="20210131 12:26:49.501" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/fc8e73d3-2b79-4947-b926-a7298c59e09b/text HTTP/1.1" 200 40</msg>
+<msg timestamp="20210131 12:26:49.501" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:49.503" level="INFO">${GameName} = Dead by Daylight Tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:49.355" endtime="20210131 12:26:49.504"></status>
+</kw>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GameName}</arg>
+<arg>T</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:49.505" level="INFO">${GameName} = ['Dead by Daylight ', 'ournaments']</msg>
+<status status="PASS" starttime="20210131 12:26:49.504" endtime="20210131 12:26:49.505"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:49.506" level="INFO">Clicking element '//*[@id="game_list"]/ul/li[96]/a/figcaption'.</msg>
+<msg timestamp="20210131 12:26:49.507" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[96]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:49.558" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:49.559" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:49.560" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/fc8e73d3-2b79-4947-b926-a7298c59e09b/click {"id": "fc8e73d3-2b79-4947-b926-a7298c59e09b"}</msg>
+<msg timestamp="20210131 12:26:52.085" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/fc8e73d3-2b79-4947-b926-a7298c59e09b/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:52.086" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:49.506" endtime="20210131 12:26:52.087"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${gameUrlVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<msg timestamp="20210131 12:26:52.092" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:52.122" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:52.123" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:52.090" endtime="20210131 12:26:52.124"></status>
+</kw>
+<msg timestamp="20210131 12:26:52.124" level="INFO">${gameUrlVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:52.088" endtime="20210131 12:26:52.125"></status>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<doc>Sets variable based on the given condition.</doc>
+<arguments>
+<arg>"${gameUrlVisiblity}" == "True"</arg>
+<arg>${gameStatusCode}</arg>
+</arguments>
+<assign>
+<var>${gameStatusCode}</var>
+</assign>
+<msg timestamp="20210131 12:26:52.130" level="INFO">${gameStatusCode} = 200</msg>
+<status status="PASS" starttime="20210131 12:26:52.126" endtime="20210131 12:26:52.131"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>return window.location.href;</arg>
+</arguments>
+<assign>
+<var>${gameUrl}</var>
+</assign>
+<msg timestamp="20210131 12:26:52.133" level="INFO">Executing JavaScript:
+return window.location.href;
+Without any arguments.</msg>
+<msg timestamp="20210131 12:26:52.134" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync {"script": "return window.location.href;", "args": []}</msg>
+<msg timestamp="20210131 12:26:52.142" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync HTTP/1.1" 200 78</msg>
+<msg timestamp="20210131 12:26:52.143" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:52.144" level="INFO">${gameUrl} = https://www.game.tv/find-tournaments/-dead-by-daylight-tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:52.132" endtime="20210131 12:26:52.144"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${tournamentCount}</var>
+</assign>
+<msg timestamp="20210131 12:26:52.146" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:52.159" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:52.160" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:52.160" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/3b0741af-e836-445e-9748-265cd100cfcf/text {"id": "3b0741af-e836-445e-9748-265cd100cfcf"}</msg>
+<msg timestamp="20210131 12:26:52.207" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/3b0741af-e836-445e-9748-265cd100cfcf/text HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:52.209" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:52.210" level="INFO">${tournamentCount} = 80</msg>
+<status status="PASS" starttime="20210131 12:26:52.145" endtime="20210131 12:26:52.211"></status>
+</kw>
+<kw name="To Append Values">
+<doc>Testing excel.py code to Add 3 Values to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>${i}</arg>
+<arg>${GameName}[0]</arg>
+<arg>${gameUrl}</arg>
+<arg>${gameStatusCode}</arg>
+<arg>${tournamentCount}</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:52.214" endtime="20210131 12:26:52.216"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:52.216" endtime="20210131 12:26:52.266"></status>
+</kw>
+<kw name="Append Values" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${Value1}</arg>
+<arg>${Value2}</arg>
+<arg>${Value3}</arg>
+<arg>${Value4}</arg>
+<arg>${Value5}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:52.267" endtime="20210131 12:26:52.324"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:52.211" endtime="20210131 12:26:52.325"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}-${GameName}[0]-${tournamentCount}-${gameurl}-${gameStatusCode}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:52.325" endtime="20210131 12:26:52.327"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<msg timestamp="20210131 12:26:52.329" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/back {}</msg>
+<msg timestamp="20210131 12:26:53.654" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/back HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:53.655" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:52.328" endtime="20210131 12:26:53.656"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:48.934" endtime="20210131 12:26:53.657"></status>
+</kw>
+<kw name="${i} = 97" type="foritem">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GametilesVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:53.662" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[97]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:54.205" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:54.206" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:53.661" endtime="20210131 12:26:54.207"></status>
+</kw>
+<msg timestamp="20210131 12:26:54.208" level="INFO">${GametilesVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:53.659" endtime="20210131 12:26:54.208"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>"${GametilesVisiblity}" == "False"</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:54.209" endtime="20210131 12:26:54.211"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:54.212" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[97]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:54.282" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:54.283" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:54.284" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/8e1c696a-c4cf-44cb-ba46-98697098666d/text {"id": "8e1c696a-c4cf-44cb-ba46-98697098666d"}</msg>
+<msg timestamp="20210131 12:26:54.386" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/8e1c696a-c4cf-44cb-ba46-98697098666d/text HTTP/1.1" 200 36</msg>
+<msg timestamp="20210131 12:26:54.387" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:54.388" level="INFO">${GameName} = Bowling King Tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:54.211" endtime="20210131 12:26:54.388"></status>
+</kw>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GameName}</arg>
+<arg>T</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:54.390" level="INFO">${GameName} = ['Bowling King ', 'ournaments']</msg>
+<status status="PASS" starttime="20210131 12:26:54.389" endtime="20210131 12:26:54.390"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:54.392" level="INFO">Clicking element '//*[@id="game_list"]/ul/li[97]/a/figcaption'.</msg>
+<msg timestamp="20210131 12:26:54.393" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[97]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:54.441" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:54.441" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:54.442" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/8e1c696a-c4cf-44cb-ba46-98697098666d/click {"id": "8e1c696a-c4cf-44cb-ba46-98697098666d"}</msg>
+<msg timestamp="20210131 12:26:57.363" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/8e1c696a-c4cf-44cb-ba46-98697098666d/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:57.365" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:54.391" endtime="20210131 12:26:57.365"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${gameUrlVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<msg timestamp="20210131 12:26:57.370" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:57.397" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:57.398" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:57.369" endtime="20210131 12:26:57.399"></status>
+</kw>
+<msg timestamp="20210131 12:26:57.400" level="INFO">${gameUrlVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:57.367" endtime="20210131 12:26:57.402"></status>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<doc>Sets variable based on the given condition.</doc>
+<arguments>
+<arg>"${gameUrlVisiblity}" == "True"</arg>
+<arg>${gameStatusCode}</arg>
+</arguments>
+<assign>
+<var>${gameStatusCode}</var>
+</assign>
+<msg timestamp="20210131 12:26:57.405" level="INFO">${gameStatusCode} = 200</msg>
+<status status="PASS" starttime="20210131 12:26:57.403" endtime="20210131 12:26:57.406"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>return window.location.href;</arg>
+</arguments>
+<assign>
+<var>${gameUrl}</var>
+</assign>
+<msg timestamp="20210131 12:26:57.411" level="INFO">Executing JavaScript:
+return window.location.href;
+Without any arguments.</msg>
+<msg timestamp="20210131 12:26:57.412" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync {"script": "return window.location.href;", "args": []}</msg>
+<msg timestamp="20210131 12:26:57.421" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync HTTP/1.1" 200 74</msg>
+<msg timestamp="20210131 12:26:57.421" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:57.422" level="INFO">${gameUrl} = https://www.game.tv/find-tournaments/-bowling-king-tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:57.407" endtime="20210131 12:26:57.423"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${tournamentCount}</var>
+</assign>
+<msg timestamp="20210131 12:26:57.425" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:26:57.447" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:57.448" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:57.449" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/944f6d29-7ac3-4408-8f3b-cf375c37cfd6/text {"id": "944f6d29-7ac3-4408-8f3b-cf375c37cfd6"}</msg>
+<msg timestamp="20210131 12:26:57.471" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/944f6d29-7ac3-4408-8f3b-cf375c37cfd6/text HTTP/1.1" 200 17</msg>
+<msg timestamp="20210131 12:26:57.472" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:57.472" level="INFO">${tournamentCount} = 1,042</msg>
+<status status="PASS" starttime="20210131 12:26:57.424" endtime="20210131 12:26:57.473"></status>
+</kw>
+<kw name="To Append Values">
+<doc>Testing excel.py code to Add 3 Values to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>${i}</arg>
+<arg>${GameName}[0]</arg>
+<arg>${gameUrl}</arg>
+<arg>${gameStatusCode}</arg>
+<arg>${tournamentCount}</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:57.477" endtime="20210131 12:26:57.478"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:57.479" endtime="20210131 12:26:57.517"></status>
+</kw>
+<kw name="Append Values" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${Value1}</arg>
+<arg>${Value2}</arg>
+<arg>${Value3}</arg>
+<arg>${Value4}</arg>
+<arg>${Value5}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:57.518" endtime="20210131 12:26:57.601"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:57.474" endtime="20210131 12:26:57.603"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}-${GameName}[0]-${tournamentCount}-${gameurl}-${gameStatusCode}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:57.604" endtime="20210131 12:26:57.606"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<msg timestamp="20210131 12:26:57.608" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/back {}</msg>
+<msg timestamp="20210131 12:26:58.974" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/back HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:26:58.977" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:57.607" endtime="20210131 12:26:58.977"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:53.658" endtime="20210131 12:26:58.978"></status>
+</kw>
+<kw name="${i} = 98" type="foritem">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GametilesVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:58.983" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[98]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:59.281" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:59.282" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:58.981" endtime="20210131 12:26:59.283"></status>
+</kw>
+<msg timestamp="20210131 12:26:59.284" level="INFO">${GametilesVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:26:58.980" endtime="20210131 12:26:59.284"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>"${GametilesVisiblity}" == "False"</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:26:59.285" endtime="20210131 12:26:59.287"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:59.290" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[98]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:59.344" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:59.345" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:59.346" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/1dd4be36-2012-4923-be2a-f3b8cdb2b1c0/text {"id": "1dd4be36-2012-4923-be2a-f3b8cdb2b1c0"}</msg>
+<msg timestamp="20210131 12:26:59.408" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/1dd4be36-2012-4923-be2a-f3b8cdb2b1c0/text HTTP/1.1" 200 43</msg>
+<msg timestamp="20210131 12:26:59.409" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:59.409" level="INFO">${GameName} = BLACK DESERT MOBILE Tournaments</msg>
+<status status="PASS" starttime="20210131 12:26:59.289" endtime="20210131 12:26:59.409"></status>
+</kw>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GameName}</arg>
+<arg>T</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:26:59.411" level="INFO">${GameName} = ['BLACK DESER', ' MOBILE ', 'ournaments']</msg>
+<status status="PASS" starttime="20210131 12:26:59.410" endtime="20210131 12:26:59.412"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:26:59.413" level="INFO">Clicking element '//*[@id="game_list"]/ul/li[98]/a/figcaption'.</msg>
+<msg timestamp="20210131 12:26:59.413" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[98]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:26:59.457" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:26:59.458" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:26:59.458" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/1dd4be36-2012-4923-be2a-f3b8cdb2b1c0/click {"id": "1dd4be36-2012-4923-be2a-f3b8cdb2b1c0"}</msg>
+<msg timestamp="20210131 12:27:03.417" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/1dd4be36-2012-4923-be2a-f3b8cdb2b1c0/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:27:03.421" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:26:59.412" endtime="20210131 12:27:03.424"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${gameUrlVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<msg timestamp="20210131 12:27:03.429" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:27:03.445" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:27:03.446" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:27:03.427" endtime="20210131 12:27:03.446"></status>
+</kw>
+<msg timestamp="20210131 12:27:03.447" level="INFO">${gameUrlVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:27:03.426" endtime="20210131 12:27:03.447"></status>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<doc>Sets variable based on the given condition.</doc>
+<arguments>
+<arg>"${gameUrlVisiblity}" == "True"</arg>
+<arg>${gameStatusCode}</arg>
+</arguments>
+<assign>
+<var>${gameStatusCode}</var>
+</assign>
+<msg timestamp="20210131 12:27:03.448" level="INFO">${gameStatusCode} = 200</msg>
+<status status="PASS" starttime="20210131 12:27:03.447" endtime="20210131 12:27:03.449"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>return window.location.href;</arg>
+</arguments>
+<assign>
+<var>${gameUrl}</var>
+</assign>
+<msg timestamp="20210131 12:27:03.452" level="INFO">Executing JavaScript:
+return window.location.href;
+Without any arguments.</msg>
+<msg timestamp="20210131 12:27:03.452" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync {"script": "return window.location.href;", "args": []}</msg>
+<msg timestamp="20210131 12:27:03.461" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync HTTP/1.1" 200 81</msg>
+<msg timestamp="20210131 12:27:03.462" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:03.463" level="INFO">${gameUrl} = https://www.game.tv/find-tournaments/-black-desert-mobile-tournaments</msg>
+<status status="PASS" starttime="20210131 12:27:03.450" endtime="20210131 12:27:03.463"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${tournamentCount}</var>
+</assign>
+<msg timestamp="20210131 12:27:03.464" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:27:03.481" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:27:03.482" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:03.483" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/5d0857c2-1f56-49b3-a56b-4c02161a6450/text {"id": "5d0857c2-1f56-49b3-a56b-4c02161a6450"}</msg>
+<msg timestamp="20210131 12:27:03.511" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/5d0857c2-1f56-49b3-a56b-4c02161a6450/text HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:27:03.512" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:03.512" level="INFO">${tournamentCount} = 28</msg>
+<status status="PASS" starttime="20210131 12:27:03.463" endtime="20210131 12:27:03.513"></status>
+</kw>
+<kw name="To Append Values">
+<doc>Testing excel.py code to Add 3 Values to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>${i}</arg>
+<arg>${GameName}[0]</arg>
+<arg>${gameUrl}</arg>
+<arg>${gameStatusCode}</arg>
+<arg>${tournamentCount}</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:27:03.517" endtime="20210131 12:27:03.519"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:27:03.519" endtime="20210131 12:27:03.546"></status>
+</kw>
+<kw name="Append Values" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${Value1}</arg>
+<arg>${Value2}</arg>
+<arg>${Value3}</arg>
+<arg>${Value4}</arg>
+<arg>${Value5}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:27:03.547" endtime="20210131 12:27:03.594"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:27:03.514" endtime="20210131 12:27:03.595"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}-${GameName}[0]-${tournamentCount}-${gameurl}-${gameStatusCode}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:27:03.596" endtime="20210131 12:27:03.598"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<msg timestamp="20210131 12:27:03.600" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/back {}</msg>
+<msg timestamp="20210131 12:27:05.637" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/back HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:27:05.638" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:27:03.599" endtime="20210131 12:27:05.640"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:58.979" endtime="20210131 12:27:05.640"></status>
+</kw>
+<kw name="${i} = 99" type="foritem">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GametilesVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:27:05.647" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[99]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:05.801" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:27:05.803" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:27:05.645" endtime="20210131 12:27:05.804"></status>
+</kw>
+<msg timestamp="20210131 12:27:05.805" level="INFO">${GametilesVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:27:05.644" endtime="20210131 12:27:05.806"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>"${GametilesVisiblity}" == "False"</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:27:05.807" endtime="20210131 12:27:05.808"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:27:05.810" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[99]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:05.861" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:27:05.862" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:05.863" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/65df0687-73a7-4e92-bdc7-0030c48b1528/text {"id": "65df0687-73a7-4e92-bdc7-0030c48b1528"}</msg>
+<msg timestamp="20210131 12:27:05.920" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/65df0687-73a7-4e92-bdc7-0030c48b1528/text HTTP/1.1" 200 49</msg>
+<msg timestamp="20210131 12:27:05.921" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:05.921" level="INFO">${GameName} = Ludo World-Ludo Superstar Tournaments</msg>
+<status status="PASS" starttime="20210131 12:27:05.809" endtime="20210131 12:27:05.921"></status>
+</kw>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GameName}</arg>
+<arg>T</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:27:05.923" level="INFO">${GameName} = ['Ludo World-Ludo Superstar ', 'ournaments']</msg>
+<status status="PASS" starttime="20210131 12:27:05.922" endtime="20210131 12:27:05.923"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:27:05.924" level="INFO">Clicking element '//*[@id="game_list"]/ul/li[99]/a/figcaption'.</msg>
+<msg timestamp="20210131 12:27:05.924" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[99]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:05.974" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:27:05.975" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:05.975" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/65df0687-73a7-4e92-bdc7-0030c48b1528/click {"id": "65df0687-73a7-4e92-bdc7-0030c48b1528"}</msg>
+<msg timestamp="20210131 12:27:08.904" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/65df0687-73a7-4e92-bdc7-0030c48b1528/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:27:08.905" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:27:05.923" endtime="20210131 12:27:08.906"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${gameUrlVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<msg timestamp="20210131 12:27:08.910" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:27:08.935" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:27:08.936" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:27:08.909" endtime="20210131 12:27:08.936"></status>
+</kw>
+<msg timestamp="20210131 12:27:08.937" level="INFO">${gameUrlVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:27:08.907" endtime="20210131 12:27:08.937"></status>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<doc>Sets variable based on the given condition.</doc>
+<arguments>
+<arg>"${gameUrlVisiblity}" == "True"</arg>
+<arg>${gameStatusCode}</arg>
+</arguments>
+<assign>
+<var>${gameStatusCode}</var>
+</assign>
+<msg timestamp="20210131 12:27:08.939" level="INFO">${gameStatusCode} = 200</msg>
+<status status="PASS" starttime="20210131 12:27:08.938" endtime="20210131 12:27:08.939"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>return window.location.href;</arg>
+</arguments>
+<assign>
+<var>${gameUrl}</var>
+</assign>
+<msg timestamp="20210131 12:27:08.942" level="INFO">Executing JavaScript:
+return window.location.href;
+Without any arguments.</msg>
+<msg timestamp="20210131 12:27:08.942" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync {"script": "return window.location.href;", "args": []}</msg>
+<msg timestamp="20210131 12:27:08.974" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync HTTP/1.1" 200 87</msg>
+<msg timestamp="20210131 12:27:08.976" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:08.977" level="INFO">${gameUrl} = https://www.game.tv/find-tournaments/_ludo_world-ludo_superstar-tournaments</msg>
+<status status="PASS" starttime="20210131 12:27:08.940" endtime="20210131 12:27:08.977"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${tournamentCount}</var>
+</assign>
+<msg timestamp="20210131 12:27:08.980" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:27:09.002" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:27:09.003" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:09.003" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/d1e62223-4290-43cc-9d87-e9f6e3f43891/text {"id": "d1e62223-4290-43cc-9d87-e9f6e3f43891"}</msg>
+<msg timestamp="20210131 12:27:09.036" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/d1e62223-4290-43cc-9d87-e9f6e3f43891/text HTTP/1.1" 200 17</msg>
+<msg timestamp="20210131 12:27:09.037" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:09.039" level="INFO">${tournamentCount} = 1,530</msg>
+<status status="PASS" starttime="20210131 12:27:08.979" endtime="20210131 12:27:09.040"></status>
+</kw>
+<kw name="To Append Values">
+<doc>Testing excel.py code to Add 3 Values to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>${i}</arg>
+<arg>${GameName}[0]</arg>
+<arg>${gameUrl}</arg>
+<arg>${gameStatusCode}</arg>
+<arg>${tournamentCount}</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:27:09.045" endtime="20210131 12:27:09.047"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:27:09.049" endtime="20210131 12:27:09.103"></status>
+</kw>
+<kw name="Append Values" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${Value1}</arg>
+<arg>${Value2}</arg>
+<arg>${Value3}</arg>
+<arg>${Value4}</arg>
+<arg>${Value5}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:27:09.104" endtime="20210131 12:27:09.160"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:27:09.041" endtime="20210131 12:27:09.161"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}-${GameName}[0]-${tournamentCount}-${gameurl}-${gameStatusCode}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:27:09.162" endtime="20210131 12:27:09.163"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<msg timestamp="20210131 12:27:09.165" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/back {}</msg>
+<msg timestamp="20210131 12:27:10.834" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/back HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:27:10.835" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:27:09.164" endtime="20210131 12:27:10.836"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:27:05.642" endtime="20210131 12:27:10.837"></status>
+</kw>
+<kw name="${i} = 100" type="foritem">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GametilesVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:27:10.843" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[100]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:10.982" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:27:10.983" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:27:10.840" endtime="20210131 12:27:10.984"></status>
+</kw>
+<msg timestamp="20210131 12:27:10.984" level="INFO">${GametilesVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:27:10.839" endtime="20210131 12:27:10.985"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>"${GametilesVisiblity}" == "False"</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:27:10.986" endtime="20210131 12:27:10.988"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:27:10.990" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[100]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:11.071" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:27:11.072" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:11.073" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/86c37be1-fb8f-49a3-9c27-94647b99a847/text {"id": "86c37be1-fb8f-49a3-9c27-94647b99a847"}</msg>
+<msg timestamp="20210131 12:27:11.130" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/86c37be1-fb8f-49a3-9c27-94647b99a847/text HTTP/1.1" 200 44</msg>
+<msg timestamp="20210131 12:27:11.132" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:11.133" level="INFO">${GameName} = Jurassic World Alive Tournaments</msg>
+<status status="PASS" starttime="20210131 12:27:10.988" endtime="20210131 12:27:11.133"></status>
+</kw>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GameName}</arg>
+<arg>T</arg>
+</arguments>
+<assign>
+<var>${GameName}</var>
+</assign>
+<msg timestamp="20210131 12:27:11.135" level="INFO">${GameName} = ['Jurassic World Alive ', 'ournaments']</msg>
+<status status="PASS" starttime="20210131 12:27:11.134" endtime="20210131 12:27:11.135"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:27:11.136" level="INFO">Clicking element '//*[@id="game_list"]/ul/li[100]/a/figcaption'.</msg>
+<msg timestamp="20210131 12:27:11.137" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[100]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:11.186" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:27:11.188" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:11.189" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/86c37be1-fb8f-49a3-9c27-94647b99a847/click {"id": "86c37be1-fb8f-49a3-9c27-94647b99a847"}</msg>
+<msg timestamp="20210131 12:27:13.772" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/86c37be1-fb8f-49a3-9c27-94647b99a847/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:27:13.774" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:27:11.136" endtime="20210131 12:27:13.775"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${gameUrlVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<msg timestamp="20210131 12:27:13.779" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:27:13.886" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:27:13.887" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:27:13.778" endtime="20210131 12:27:13.888"></status>
+</kw>
+<msg timestamp="20210131 12:27:13.888" level="INFO">${gameUrlVisiblity} = True</msg>
+<status status="PASS" starttime="20210131 12:27:13.776" endtime="20210131 12:27:13.889"></status>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<doc>Sets variable based on the given condition.</doc>
+<arguments>
+<arg>"${gameUrlVisiblity}" == "True"</arg>
+<arg>${gameStatusCode}</arg>
+</arguments>
+<assign>
+<var>${gameStatusCode}</var>
+</assign>
+<msg timestamp="20210131 12:27:13.891" level="INFO">${gameStatusCode} = 200</msg>
+<status status="PASS" starttime="20210131 12:27:13.889" endtime="20210131 12:27:13.891"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>return window.location.href;</arg>
+</arguments>
+<assign>
+<var>${gameUrl}</var>
+</assign>
+<msg timestamp="20210131 12:27:13.892" level="INFO">Executing JavaScript:
+return window.location.href;
+Without any arguments.</msg>
+<msg timestamp="20210131 12:27:13.893" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync {"script": "return window.location.href;", "args": []}</msg>
+<msg timestamp="20210131 12:27:13.951" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/execute/sync HTTP/1.1" 200 81</msg>
+<msg timestamp="20210131 12:27:13.952" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:13.953" level="INFO">${gameUrl} = https://www.game.tv/find-tournaments/jurassic-world-alive-tournaments</msg>
+<status status="PASS" starttime="20210131 12:27:13.892" endtime="20210131 12:27:13.953"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class="count-tournaments"]</arg>
+</arguments>
+<assign>
+<var>${tournamentCount}</var>
+</assign>
+<msg timestamp="20210131 12:27:13.956" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//span[@class=\"count-tournaments\"]"}</msg>
+<msg timestamp="20210131 12:27:14.065" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20210131 12:27:14.067" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:14.068" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/6739d568-6679-4eb0-a6ed-e6f7b9136245/text {"id": "6739d568-6679-4eb0-a6ed-e6f7b9136245"}</msg>
+<msg timestamp="20210131 12:27:14.095" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/element/6739d568-6679-4eb0-a6ed-e6f7b9136245/text HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:27:14.097" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:14.098" level="INFO">${tournamentCount} = 10</msg>
+<status status="PASS" starttime="20210131 12:27:13.954" endtime="20210131 12:27:14.098"></status>
+</kw>
+<kw name="To Append Values">
+<doc>Testing excel.py code to Add 3 Values to a Excel</doc>
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${ExcelName}</arg>
+<arg>${i}</arg>
+<arg>${GameName}[0]</arg>
+<arg>${gameUrl}</arg>
+<arg>${gameStatusCode}</arg>
+<arg>${tournamentCount}</arg>
+</arguments>
+<kw name="Check File" library="Excel">
+<arguments>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:27:14.102" endtime="20210131 12:27:14.104"></status>
+</kw>
+<kw name="Check Sheet" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:27:14.105" endtime="20210131 12:27:14.144"></status>
+</kw>
+<kw name="Append Values" library="Excel">
+<arguments>
+<arg>${SheetName}</arg>
+<arg>${EXECDIR}${/}${ExcelName}</arg>
+<arg>${Value1}</arg>
+<arg>${Value2}</arg>
+<arg>${Value3}</arg>
+<arg>${Value4}</arg>
+<arg>${Value5}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:27:14.145" endtime="20210131 12:27:14.193"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:27:14.099" endtime="20210131 12:27:14.194"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}-${GameName}[0]-${tournamentCount}-${gameurl}-${gameStatusCode}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 12:27:14.195" endtime="20210131 12:27:14.197"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<msg timestamp="20210131 12:27:14.199" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/back {}</msg>
+<msg timestamp="20210131 12:27:15.948" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/back HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:27:15.949" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:27:14.198" endtime="20210131 12:27:15.950"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:27:10.838" endtime="20210131 12:27:15.951"></status>
+</kw>
+<kw name="${i} = 101" type="foritem">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Page Contains Element</arg>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<assign>
+<var>${GametilesVisiblity}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="game_list"]/ul/li[${i}]/a/figcaption</arg>
+</arguments>
+<msg timestamp="20210131 12:27:15.960" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:16.089" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:16.091" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:16.293" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:16.349" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:16.350" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:16.552" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:16.600" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:16.601" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:16.802" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:16.862" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:16.863" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:17.064" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:17.111" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:17.112" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:17.315" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:17.382" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:17.383" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:17.584" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:17.645" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:17.646" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:17.847" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:17.917" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:17.919" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:18.119" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:18.163" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:18.164" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:18.364" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:18.427" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:18.428" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:18.628" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:18.677" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:18.678" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:18.880" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:18.933" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:18.935" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:19.136" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:19.175" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:19.176" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:19.378" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:19.428" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:19.429" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:19.630" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:19.680" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:19.681" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:19.882" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:19.939" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:19.940" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:20.142" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:20.208" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:20.209" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:20.409" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:20.490" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:20.491" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:20.693" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:20.755" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:20.757" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:20.958" level="DEBUG">POST http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements {"using": "xpath", "value": "//*[@id=\"game_list\"]/ul/li[101]/a/figcaption"}</msg>
+<msg timestamp="20210131 12:27:21.033" level="DEBUG">http://127.0.0.1:4647 "POST /session/91736abd0b97a3be6f0c0fb4ba1f2dff/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20210131 12:27:21.035" level="DEBUG">Finished Request</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20210131 12:27:21.240" level="DEBUG">GET http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff/screenshot {}</msg>
+<msg timestamp="20210131 12:27:22.063" level="DEBUG">http://127.0.0.1:4647 "GET /session/91736abd0b97a3be6f0c0fb4ba1f2dff/screenshot HTTP/1.1" 200 637000</msg>
+<msg timestamp="20210131 12:27:22.116" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210131 12:27:22.131" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210131 12:27:21.238" endtime="20210131 12:27:22.133"></status>
+</kw>
+<msg timestamp="20210131 12:27:22.142" level="FAIL">Element '//*[@id="game_list"]/ul/li[101]/a/figcaption' did not appear in 5 seconds.</msg>
+<msg timestamp="20210131 12:27:22.142" level="DEBUG">Traceback (most recent call last):
+  File "C:\Users\rishabja\OneDrive - AMDOCS\Backup Folders\Desktop\GameDetails\Lib\SeleniumLibrary\__init__.py", line 372, in run_keyword
+    return DynamicCore.run_keyword(self, name, args, kwargs)
+  File "C:\Users\rishabja\OneDrive - AMDOCS\Backup Folders\Desktop\GameDetails\Lib\SeleniumLibrary\base\robotlibcore.py", line 102, in run_keyword
+    return self.keywords[name](*args, **kwargs)
+  File "C:\Users\rishabja\OneDrive - AMDOCS\Backup Folders\Desktop\GameDetails\Lib\SeleniumLibrary\keywords\waiting.py", line 100, in wait_until_page_contains_element
+    timeout, error
+  File "C:\Users\rishabja\OneDrive - AMDOCS\Backup Folders\Desktop\GameDetails\Lib\SeleniumLibrary\keywords\waiting.py", line 222, in _wait_until
+    self._wait_until_worker(condition, timeout, error)
+  File "C:\Users\rishabja\OneDrive - AMDOCS\Backup Folders\Desktop\GameDetails\Lib\SeleniumLibrary\keywords\waiting.py", line 239, in _wait_until_worker
+    raise AssertionError(not_found or error)</msg>
+<status status="FAIL" starttime="20210131 12:27:15.957" endtime="20210131 12:27:22.143"></status>
+</kw>
+<msg timestamp="20210131 12:27:22.144" level="INFO">${GametilesVisiblity} = False</msg>
+<status status="PASS" starttime="20210131 12:27:15.955" endtime="20210131 12:27:22.144"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>"${GametilesVisiblity}" == "False"</arg>
+</arguments>
+<msg timestamp="20210131 12:27:22.147" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20210131 12:27:22.145" endtime="20210131 12:27:22.148"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:27:15.953" endtime="20210131 12:27:22.149"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:26:12.323" endtime="20210131 12:27:22.150"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<msg timestamp="20210131 12:27:22.157" level="DEBUG">Closing browser with session id 91736abd0b97a3be6f0c0fb4ba1f2dff.</msg>
+<msg timestamp="20210131 12:27:22.159" level="DEBUG">DELETE http://127.0.0.1:4647/session/91736abd0b97a3be6f0c0fb4ba1f2dff {}</msg>
+<msg timestamp="20210131 12:27:22.361" level="DEBUG">http://127.0.0.1:4647 "DELETE /session/91736abd0b97a3be6f0c0fb4ba1f2dff HTTP/1.1" 200 14</msg>
+<msg timestamp="20210131 12:27:22.363" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20210131 12:27:22.153" endtime="20210131 12:27:25.762"></status>
+</kw>
+<status status="PASS" starttime="20210131 12:25:57.493" endtime="20210131 12:27:25.764" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210131 12:25:55.331" endtime="20210131 12:27:25.766"></status>
+</suite>
+<status status="PASS" starttime="20210131 12:25:55.322" endtime="20210131 12:27:25.771"></status>
+</suite>
+<status status="PASS" starttime="20210131 12:25:55.274" endtime="20210131 12:27:25.775"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="GameDetails">GameDetails</stat>
+<stat pass="2" fail="0" id="s1-s1" name="TestSuite">GameDetails.TestSuite</stat>
+<stat pass="2" fail="0" id="s1-s1-s1" name="Angular CANOPI Initiated">GameDetails.TestSuite.Angular CANOPI Initiated</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

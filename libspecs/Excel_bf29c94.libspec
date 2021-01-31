@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec format="ROBOT" generated="2021-01-30T19:43:31Z" lineno="1" name="Excel" namedargs="true" scope="GLOBAL" source="C:\Users\rishabja\OneDrive - AMDOCS\Backup Folders\Desktop\GameDetails\Lib\Excel.py" specversion="2" type="LIBRARY">
+<version />
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``Excel``.</doc>
+<kw lineno="15" name="Add New Sheet">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="24" name="Add Value">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+<arg>cell_cords</arg>
+<arg>value</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="36" name="Append Value">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+<arg>c1_value</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="48" name="Append Values">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+<arg>c1_value</arg>
+<arg>c2_value</arg>
+<arg>c3_value</arg>
+<arg>c4_value</arg>
+<arg>c5_value</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="42" name="Append Values Old">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+<arg>c1_value</arg>
+<arg>c2_value</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="59" name="Check File">
+<arguments>
+<arg>path</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="119" name="Check Sheet">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="7" name="Create Excel File">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="119" name="Filename" source="C:\Python\Python37-32\lib\fileinput.py">
+<arguments>
+</arguments>
+<doc>Return the name of the file currently being read.
+Before the first line has been read, returns None.</doc>
+</kw>
+<kw lineno="102" name="Find Column">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+<arg>value</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="65" name="Find Model">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+<arg>value</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="90" name="Find Row">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+<arg>value</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="126" name="Find Uuid">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="138" name="Find Uuid AAI">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="78" name="Find Value">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+<arg>value</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="31" name="Get Row Count">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="151" name="Get Specific Value From Excel">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+<arg>cellcords</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="158" name="Get Value From Excel">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+<arg>key</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="144" name="Load Workbook" source="C:\Users\rishabja\OneDrive - AMDOCS\Backup Folders\Desktop\GameDetails\Lib\openpyxl\reader\excel.py">
+<arguments>
+<arg>filename</arg>
+<arg>read_only=False</arg>
+<arg>keep_vba=False</arg>
+<arg>data_only=False</arg>
+<arg>guess_types=False</arg>
+<arg>keep_links=True</arg>
+</arguments>
+<doc>Open the given filename and return the workbook
+
+:param filename: the path to open or a file-like object
+:type filename: string or a file-like object open in binary mode c.f., :class:`zipfile.ZipFile`
+
+:param read_only: optimised for reading, content cannot be edited
+:type read_only: bool
+
+:param keep_vba: preseve vba content (this does NOT mean you can use it)
+:type keep_vba: bool
+
+:param guess_types: guess cell content type and do not read it from the file
+:type guess_types: bool
+
+:param data_only: controls whether cells with formulae have either the formula (default) or the value stored the last time Excel read the sheet
+:type data_only: bool
+
+:param keep_links: whether links to external workbooks should be preserved. The default is True
+:type keep_links: bool
+
+:rtype: :class:`openpyxl.workbook.Workbook`
+
+.. note::
+
+    When using lazy load, all worksheets will be :class:`openpyxl.worksheet.iter_worksheet.IterableWorksheet`
+    and the returned workbook will be read-only.</doc>
+</kw>
+<kw lineno="114" name="Read Excel Cell">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+<arg>cellcords</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="173" name="Update Value From Excel">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+<arg>key</arg>
+<arg>value</arg>
+</arguments>
+<doc />
+</kw>
+<kw lineno="192" name="Update Value From Excel Xlsm">
+<arguments>
+<arg>sheet_name</arg>
+<arg>file_name</arg>
+<arg>key</arg>
+<arg>value</arg>
+</arguments>
+<doc />
+</kw>
+</keywordspec>
