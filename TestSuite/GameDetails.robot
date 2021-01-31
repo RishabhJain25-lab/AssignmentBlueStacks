@@ -29,7 +29,7 @@ TC#1 Open Game Website
          ${GametilesVisiblity}    Run Keyword And Return Status        Wait Until Page Contains Element   //*[@id="game_list"]/ul/li[${i}]/a/figcaption
          Exit For Loop If    "${GametilesVisiblity}" == "False"
          ${GameName}          Get Text      //*[@id="game_list"]/ul/li[${i}]/a/figcaption
-         ${GameName}  Split String   ${GameName}   T    
+         ${GameName}  Split String   ${GameName}   Tournament   
          #Log To Console   ${Name}    
          Click Element    //*[@id="game_list"]/ul/li[${i}]/a/figcaption
          ${gameUrlVisiblity}    Run Keyword And Return Status   Wait Until Page Contains Element    //span[@class="count-tournaments"]   
